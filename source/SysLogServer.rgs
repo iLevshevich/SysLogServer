@@ -1,0 +1,12 @@
+HKCR
+{
+	AppID
+	{
+		'SysLogServer.EXE'
+		{
+			val AppID = s '{0B23975B-6EA4-4C18-AB52-6710BD92FE23}'
+			val LocalService = s 'SysLogServer'
+            val ServiceParameters = s '-Service'
+		}
+	}
+}
