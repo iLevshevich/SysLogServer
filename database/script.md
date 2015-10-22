@@ -62,8 +62,9 @@
     CONSTRAINT [FK_EventLog_ToEventLogType] FOREIGN KEY ([event_log_type_id]) REFERENCES [dbo].[EventLogType] ([Id])
 );`
 
-* `getMessageId( ADO Adapter form nvarchar(max) )
-CREATE PROCEDURE [dbo].[getMessageId]
+* getMessageId( ADO Adapter form nvarchar(max) )
+
+`CREATE PROCEDURE [dbo].[getMessageId]
 	@RC nvarchar(36) = null OUTPUT,
 	@message nvarchar(max) = null
 AS
